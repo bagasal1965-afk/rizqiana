@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Rizqiana - Personal Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                        },
+                        violetCustom: {
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fbcfe8 0%, #e0e7ff 50%, #ddd6fe 100%);
+        }
+        .instagram-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .tiktok-gradient {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            background-color: #000;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/70 backdrop-blur-md border-b border-slate-200/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-xl font-extrabold tracking-tight gradient-text">
+                    Rizqiana<span class="text-pink-500">.</span>
+                </a>
+                
+                <!-- Desktop Nav Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition-colors">Tentang</a>
+                    <a href="#education" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition-colors">Pendidikan & Kegiatan</a>
+                    <a href="#gallery" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition-colors">Prestasi & Galeri</a>
+                    <a href="#socials" class="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-pink-500 to-purple-600 rounded-full shadow-md hover:shadow-lg hover:opacity-95 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane mr-2">="small"></i> Kontak
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Tentang Saya</a>
+            <a href="#education" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Pendidikan & Kegiatan</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Prestasi & Galeri</a>
+            <a href="#socials" class="block px-3 py-2 rounded-lg text-base font-medium text-pink-600 font-semibold hover:bg-pink-50">Kontak & Sosmed</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden gradient-bg">
+        <!-- Decorative Shapes -->
+        <div class="absolute top-10 left-10 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse" style="animation-delay: 1s;"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10 text-center md:text-left">
+                
+                <!-- Hero Content -->
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-pink-200 text-pink-700 text-xs font-semibold shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-pink-500 animate-ping"></span>
+                        Selamat Datang di Portofolio Saya
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                        Halo, Saya <br class="hidden sm:block"/>
+                        <span class="gradient-text">Rizqiana</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl font-medium text-slate-700">
+                        🎓 Siswa & Creative Student
+                    </p>
+
+                    <!-- Quote Box -->
+                    <div class="p-4 rounded-2xl glass-card border-l-4 border-l-pink-500 max-w-lg mx-auto md:mx-0 shadow-sm">
+                        <p class="italic text-slate-600 text-sm sm:text-base">
+                            "Masa depan adalah milik mereka yang percaya pada keindahan impian mereka sendiri."
+                        </p>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                        <a href="#socials" class="px-6 py-3 rounded-full bg-slate-900 text-white font-semibold shadow-lg hover:bg-slate-800 hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <span>Hubungi Saya</span>
+                            <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                        <a href="#about" class="px-6 py-3 rounded-full bg-white/80 text-slate-800 font-semibold shadow-sm hover:bg-white border border-slate-200 transition-all">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Avatar -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                        <!-- Placeholder Avatar Image using SVG/URL -->
+                        <img src="img/qq.jpeg" 
+                             alt="Rizqiana Profil" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/fbcfe8/831843?text=Rizqiana';">
+                    </div>
+                    <!-- Badge Icon -->
+                    <div class="absolute bottom-2 right-2 bg-white p-3 rounded-full shadow-lg border border-slate-100 text-pink-500 text-xl">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-pink-600 mb-2">Mengenal Lebih Dekat</h2>
+                <p class="text-3xl font-bold text-slate-900 sm:text-4xl">Tentang Saya</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Deskripsi Card -->
+                <div class="md:col-span-2 p-8 rounded-3xl bg-slate-50 border border-slate-100 shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-slate-900">Halo, Nama saya Rizqiana Ramadhani 👋</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Saya adalah seorang pelajar nestar yang antusias, bersemangat dalam belajar hal-hal baru, dan bercita-cita untuk memberikan dampak positif di lingkungan sekitar. 
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            Selain fokus pada akademik, saya sangat menyukai bidang kreatif seperti desain digital, fotografi, dan aktif dalam berbagai kegiatan organisasi di sekolah. Saya percaya bahwa kombinasi antara kedisiplinan dan kreativitas adalah kunci untuk meraih sukses di masa depan.
+                        </p>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200">
+                        <div>
+                            <span class="block text-xs text-slate-500 font-medium">Status</span>
+                            <span class="text-sm font-semibold text-slate-800">Pelajar Aktif</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-500 font-medium">Minat Utama</span>
+                            <span class="text-sm font-semibold text-slate-800">Kreatif & Teknologi</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-500 font-medium">Domisili</span>
+                            <span class="text-sm font-semibold text-slate-800">Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cita-cita & Value Card -->
+                <div class="space-y-6">
+                    <div class="p-6 rounded-3xl bg-gradient-to-br from-pink-500 to-purple-600 text-white shadow-lg space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h4 class="text-xl font-bold">Cita - Cita</h4>
+                        <p class="text-white/90 text-sm leading-relaxed">
+                            Menjadi profesional muda yang sukses di bidang kreatif & teknologi serta dapat menginspirasi teman-teman generasi muda lainnya.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100 shadow-sm space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900">Kepribadian</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Komunikatif, ramah, mudah beradaptasi, berjiwa pembelajar, dan selalu bersemangat menghadapi tantangan baru.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Activities Section -->
+    <section id="education" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-pink-600 mb-2">Jejak Langkah</h2>
+                <p class="text-3xl font-bold text-slate-900 sm:text-4xl">Pendidikan & Kegiatan</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Timeline Pendidikan -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-pink-500 text-white rounded-2xl shadow-md">
+                            <i class="fa-solid fa-graduation-cap text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800">Riwayat Sekolah</h3>
+                    </div>
+
+                    <div class="relative border-l-2 border-pink-200 ml-4 pl-6 space-y-8">
+                        <!-- Education Item 1 -->
+                        <div class="relative group">
+                            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-pink-500 border-4 border-white shadow"></div>
+                            <span class="text-xs font-semibold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-full border border-pink-200">2022 - Sekarang</span>
+                            <h4 class="text-lg font-bold text-slate-900 mt-2">Sekolah Menengah (SMA / SMK)</h4>
+                            <p class="text-sm font-medium text-slate-600">Siswa Aktif</p>
+                            <p class="text-sm text-slate-500 mt-1">Fokus pada pembelajaran akademik, keorganisasian, serta mengasah keterampilan digital & presentasi.</p>
+                        </div>
+
+                        <!-- Education Item 2 -->
+                        <div class="relative group">
+                            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-purple-400 border-4 border-white shadow"></div>
+                            <span class="text-xs font-semibold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full border border-purple-200">2019 - 2022</span>
+                            <h4 class="text-lg font-bold text-slate-900 mt-2">Sekolah Menengah Pertama (SMP)</h4>
+                            <p class="text-sm font-medium text-slate-600">Lulusan Terbaik</p>
+                            <p class="text-sm text-slate-500 mt-1">Aktif dalam organisasi OSIS dan kegiatan pramuka serta ekstrakurikuler seni.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobi & Ekstrakurikuler -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-purple-600 text-white rounded-2xl shadow-md">
+                            <i class="fa-solid fa-icons text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800">Hobi & Minat</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                            <i class="fa-solid fa-camera text-2xl text-pink-500 mb-3"></i>
+                            <h4 class="font-bold text-slate-800">Fotografi & Video</h4>
+                            <p class="text-xs text-slate-500 mt-1">Suka mengabadikan momen dan membuat konten estetis.</p>
+                        </div>
+
+                        <div class="p-5 bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                            <i class="fa-solid fa-palette text-2xl text-purple-500 mb-3"></i>
+                            <h4 class="font-bold text-slate-800">Desain Grafis</h4>
+                            <p class="text-xs text-slate-500 mt-1">Eksplorasi poster, ilustrasi digital, dan desain media sosial.</p>
+                        </div>
+
+                        <div class="p-5 bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                            <i class="fa-solid fa-book-open text-2xl text-blue-500 mb-3"></i>
+                            <h4 class="font-bold text-slate-800">Membaca Buku</h4>
+                            <p class="text-xs text-slate-500 mt-1">Gemar membaca buku pengembangan diri & fiksi.</p>
+                        </div>
+
+                        <div class="p-5 bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                            <i class="fa-solid fa-users text-2xl text-emerald-500 mb-3"></i>
+                            <h4 class="font-bold text-slate-800">Organisasi</h4>
+                            <p class="text-xs text-slate-500 mt-1">Suka bekerjasama dalam tim & mengadakan event sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Achievements Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-pink-600 mb-2">Momen & Karya</h2>
+                <p class="text-3xl font-bold text-slate-900 sm:text-4xl">Galeri & Prestasi</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-3xl bg-slate-100 border border-slate-200 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="" 
+                         alt="Prestasi Sekolah" 
+                         class="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/475569?text=Kegiatan+Sekolah';">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-full">Kegiatan</span>
+                        <h4 class="font-bold text-slate-800 text-lg mt-2">Acara Organisasi Sekolah</h4>
+                        <p class="text-xs text-slate-500 mt-1">Aktif menjadi panitia pelaksana kegiatan seni dan budaya di sekolah.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-3xl bg-slate-100 border border-slate-200 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="img/download.jpg" 
+                         alt="Prestasi Lomba" 
+                         class="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/475569?text=Prestasi';">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">Prestasi</span>
+                        <h4 class="font-bold text-slate-800 text-lg mt-2">Juara Desain Kreatif</h4>
+                        <p class="text-xs text-slate-500 mt-1">Meraih penghargaan dalam kompetisi desain poster antarsekolah.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-3xl bg-slate-100 border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 sm:col-span-2 lg:col-span-1">
+                    <img src="img/ll.png" 
+                         alt="Hobi Kreatif" 
+                         class="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/475569?text=Kreativitas';">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Proyek Kreatif</span>
+                        <h4 class="font-bold text-slate-800 text-lg mt-2">Portofolio Konten</h4>
+                        <p class="text-xs text-slate-500 mt-1">Kumpulan pembuatan konten edukatif dan estetis di media sosial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Contact Section -->
+    <section id="socials" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Background Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-pink-400 mb-2">Mari Terhubung</h2>
+                <p class="text-3xl font-bold sm:text-4xl">Media Sosial & Kontak</p>
+                <p class="text-slate-400 text-sm mt-2">Jangan ragu untuk menyapa atau berteman di jejaring sosial saya!</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+          
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/60 text-slate-500 text-xs text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2026 Biografi Rizqiana. Dibuat dengan ❤️ & Kreativitas.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Navigasi & Fitur Ubah Username Sosmed -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close Mobile Menu on Link Click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Dynamic Social Media Link Updating
+        const inputIg = document.getElementById('input-ig');
+        const inputTiktok = document.getElementById('input-tiktok');
+        const igDisplayName = document.getElementById('ig-display-name');
+        const tiktokDisplayName = document.getElementById('tiktok-display-name');
+        const igLinkCard = document.getElementById('ig-link-card');
+        const tiktokLinkCard = document.getElementById('tiktok-link-card');
+
+        function updateSocialLinks() {
+            const igVal = inputIg.value.trim() || 'rizqiana';
+            const tiktokVal = inputTiktok.value.trim() || 'rizqiana';
+
+            // Clean leading @ if entered by user
+            const cleanIg = igVal.replace(/^@/, '');
+            const cleanTiktok = tiktokVal.replace(/^@/, '');
+
+            igDisplayName.textContent = '@' + cleanIg;
+            tiktokDisplayName.textContent = '@' + cleanTiktok;
+
+            igLinkCard.href = `https://instagram.com/${cleanIg}`;
+            tiktokLinkCard.href = `https://tiktok.com/@${cleanTiktok}`;
+        }
+
+        inputIg.addEventListener('input', updateSocialLinks);
+        inputTiktok.addEventListener('input', updateSocialLinks);
+
+        // Initial trigger
+        updateSocialLinks();
+
+        // Copy Profile Link Feature
+        function copyProfileLink() {
+            const tempInput = document.createElement('input');
+            tempInput.value = window.location.href;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const copyTextBtn = document.getElementById('copy-text');
+            const originalText = copyTextBtn.textContent;
+            copyTextBtn.textContent = 'Tautan Berhasil Disalin! ✨';
+            
+            setTimeout(() => {
+                copyTextBtn.textContent = originalText;
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
